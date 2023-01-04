@@ -18,13 +18,19 @@ with col2:
 
 st.write("Below you can find some of the apps I have built in Python. Feel free to contact me!")
 
-r2_col1, r2_col2 = st.columns(2)
+r2_col1, r2_spacer, r2_col2 = st.columns([1.5,0.5,1.5]) #creating a empty spacer in the middle of columns
 
 df = pandas.read_csv("data.csv", sep=";")
 with r2_col1:
     for index, row in df[:10].iterrows():
         st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"])
+        st.write(f"[Source Code]({row['url']})")
 
 with r2_col2:
     for index, row in df[10:].iterrows():
         st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"])
+        st.write(f"[Source Code]({row['url']})")
