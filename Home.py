@@ -10,7 +10,7 @@ with col1:
 
 with col2:
     st.title("Ardit Sulce")
-    content="""
+    content = """
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis maximus quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut vitae maximus ipsum. Phasellus eu enim cursus, facilisis sem a, cursus quam. Nam eget facilisis ipsum, et laoreet augue. Morbi vestibulum ornare ex, sed venenatis ligula. In ornare tempus metus, vel blandit ante ultricies vehicula. Cras imperdiet sapien at libero convallis, nec tincidunt felis gravida. Curabitur malesuada consectetur feugiat. Praesent luctus porta hendrerit. Mauris ac tempus ex, a mattis turpis. Sed aliquam lobortis metus, nec viverra dui. Donec commodo sed turpis sit amet auctor. 
     """
     st.info(content)
